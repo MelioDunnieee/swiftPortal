@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>swiftPortal</title>
     <style>
         body {
@@ -30,13 +32,13 @@
         }
 
         .product-container {
-            width: 500px;
-            height: 500px;
+            width: 300px; /* Smaller container size */
+            height: 300px; /* Smaller container size */
             position: relative;
-            border-radius: 20px;
+            border-radius: 10px; /* Adjust border radius for smaller size */
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            margin-top: 20px; /* Space between horizontal rule and product container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjusted shadow for smaller size */
+            margin: 10px; /* Space between containers */
         }
 
         .product-image {
@@ -47,24 +49,24 @@
 
         .product-overlay {
             position: absolute;
-            bottom: 20px;
+            bottom: 10px; /* Adjusted for smaller size */
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
             text-align: center;
             color: white;
-            padding: 20px;
+            padding: 10px; /* Adjusted padding for smaller size */
             box-sizing: border-box;
         }
 
         .product-name {
-            font-size: 2em;
-            margin-bottom: 10px;
+            font-size: 1.5em; /* Adjusted font size for smaller size */
+            margin-bottom: 5px; /* Adjusted margin for smaller size */
         }
 
         .product-button {
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 10px 20px; /* Adjusted padding for smaller size */
+            font-size: 1em; /* Adjusted font size for smaller size */
             border: none;
             border-radius: 5px;
             background-color: #111111;
@@ -72,22 +74,33 @@
             text-decoration: none;
             cursor: pointer;
             display: inline-block;
-        } 
-        
+        }
+
+        .products-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center containers horizontally */
+            width: 80%;
+        }
     </style>
 </head>
 <body>
     <h1>swiftPortal</h1>
     <hr>
-    <div class="product-container">
-        <img src="Images/swiftChecker (3).png" alt="Product Image" class="product-image">
-        <div class="product-overlay">
-            <div class="product-name">swiftChecker</div>
-            <a href="https://www.roblox.com/game-pass/845533132/swiftChecker" class="product-button">Buy - 5 R$ </a> 
-             <img src="Images/swiftFizz.png" alt="Product Image" class="product-image">
-        <div class="product-overlay">
-            <div class="product-name">swiftFizz</div>
-            <a href="index.html" class="product-button">Not Available </a>
+    <div class="products-wrapper">
+        <div class="product-container">
+            <img src="Images/swiftChecker (3).png" alt="swiftChecker" class="product-image">
+            <div class="product-overlay">
+                <div class="product-name">swiftChecker</div>
+                <a href="https://www.roblox.com/game-pass/845533132/swiftChecker" class="product-button">Buy - 5 R$</a>
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="Images/swiftFizz.png" alt="swiftFizz" class="product-image">
+            <div class="product-overlay">
+                <div class="product-name">swiftFizz</div>
+                <a href="index.html" class="product-button">Not Available</a>
+            </div>
         </div>
     </div>
 </body>
